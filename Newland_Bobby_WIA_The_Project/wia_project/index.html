@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Dreamsellers Events</title>
+    <script src="includes/modernizr.js"></script>
+  <!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet"type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet"type="text/css" href="css/styles.css" />
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a> |</li>
+                <li><a href="gallery.html">Gallery</a> |</li>
+                <li><a href="contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+       <div class="hr"> <hr /></div>
+        <header>
+            <img src="images/wia-header 1.jpg">
+            <button class="btn-primary"><h4>Lets Party!</h4></button>
+        </header>
+        <div class="get-a-quote">
+            <p>Close</p>
+            <form>
+                <fieldset>
+                    <h3>Get a Quote</h3>
+                    <label for="name">Name</label><br >
+                    <input type="text" name="Name" id="name" placeholder="John Doe">
+                    <br />
+                    <br />
+                    <label for="phone">Phone Number</label><br >
+                    <input type="tel" name="phone" id="phone" placeholder="555-555-5555">
+                    <br />
+                    <br />
+                    <label for="email">Email</label><br >
+                    <input type="email" name="email" id="email" placeholder="jon@example.com">
+                    <br />
+                    <br />
+                    <label for="date">Party Date</label><br >
+                    <input type="date" name="date" id="date" >
+                    <br />
+                    <br />
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+      <div class="subtitle">  <h2>We Do It Big Everytime</h2></div>
+        <div class="mid-section">
+        <canvas id="Canvas1" width="370" height="300">
+            Your browser does not support canvas.
+        </canvas>
+        <img id="img1" src="images/stk-sparkle.jpg"/>
+
+        <div class="main-vid">
+            <video autoplay id="vid" width="500" onclick="pauseToggle()">
+                <source src ="video/Icon-Lounge.mp4" type ="video/mp4"/>
+                <source src ="video/Icon-Lounge.ogv" type ="video/ogg"/>
+            </video>
+            <br />
+
+            <div class="buttons">
+                <ul>
+                    <li><button onclick="rew()()">Rew</button></li>
+                    <li><button onclick="pauseToggle()">Play/Stop</button></li>
+                    <li><button onclick="fastForward()">FF</button></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div><!-- main wrapper -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
